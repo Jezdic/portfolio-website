@@ -1,5 +1,3 @@
-import { useState } from "react";
-
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 
@@ -7,7 +5,7 @@ const Layout = ({ children }) => {
   return (
     <div>
       <Navbar />
-      {children}
+      <div className='mt-12'>{children}</div>
       <Footer />
     </div>
   );

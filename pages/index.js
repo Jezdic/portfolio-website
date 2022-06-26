@@ -1,5 +1,5 @@
 import Head from "next/head";
-import Image from "next/image";
+import Header from "../components/Header";
 
 export default function Home() {
   return (
@@ -9,7 +9,7 @@ export default function Home() {
         <meta name='description' content='Front page of my portfolio' />
         <link rel='icon' href='/favicon.ico' />
       </Head>
-      <div className='text-red-600 mt-6'>Yeet</div>
+      <Header />
     </div>
   );
 }
