@@ -10,7 +10,7 @@ const Projects = () => {
       <h1 className='text-4xl md:text-5xl underline md:mb-20'>Projects</h1>
       <div className='flex flex-wrap gap-10 justify-center'>
         {projectData.map((pr) => (
-          <ProjectPreview project={pr} />
+          <ProjectPreview project={pr} key={pr.projectName} />
         ))}
       </div>
     </div>

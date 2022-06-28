@@ -6,19 +6,19 @@ export const projectData = [
     tags: ["react", "express", "cloudinary", "vite", "sass modules"],
   },
   {
-    projectName: "Workouter",
+    projectName: "Shopper",
     img: "/me.png",
     intro: "Workout logging social media app",
     tags: ["react", "express", "cloudinary", "vite", "sass modules"],
   },
   {
-    projectName: "Workouter",
+    projectName: "Naruto Arena Clone",
     img: "/me.png",
     intro: "Workout logging social media app",
     tags: ["react", "express", "cloudinary", "vite", "sass modules"],
   },
   {
-    projectName: "Workouter",
+    projectName: "Iks-Oks-Toe",
     img: "/me.png",
     intro: "Workout logging social media app",
     tags: ["react", "express", "cloudinary", "vite", "sass modules"],
