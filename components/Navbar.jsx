@@ -20,9 +20,9 @@ const Navbar = () => {
           <a className='hover:underline cursor-pointer' href='#about'>
             about
           </a>
-          <Link href='/'>
-            <a className='hover:underline'>skills and tools</a>
-          </Link>
+          <a href='#tools' className='hover:underline'>
+            skills and tools
+          </a>
           <Link href='/'>
             <a className='hover:underline'>projects</a>
           </Link>

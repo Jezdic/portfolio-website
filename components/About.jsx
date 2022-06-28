@@ -3,7 +3,7 @@ import Image from "next/image";
 const About = () => {
   return (
     <div
-      className='p-10 flex flex-col items-center  scroll-mt-10 justify-center gap-6 md:gap-14'
+      className='p-10 flex flex-col items-center scroll-mt-10 justify-center gap-6 md:gap-14'
       id='about'
     >
       <h1 className='text-4xl md:text-5xl underline '>About me</h1>
