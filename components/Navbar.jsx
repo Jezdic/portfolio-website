@@ -1,34 +1,43 @@
-import { useState } from "react";
+import { useState, useContext } from "react";
 import Link from "next/link";
 import { useTheme } from "next-themes";
+import SectionContext from "../utils/SectionContext";
 
 import { MdOutlineLightMode, MdOutlineDarkMode } from "react-icons/md";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 
+const menuItems = ["about", "skills", "projects", "contact"];
+
 const Navbar = () => {
   const { theme, setTheme } = useTheme();
   const [openMenu, setOpenMenu] = useState(false);
+  const { currentSection } = useContext(SectionContext);
 
   return (
     <nav className='w-full fixed top-0 px-1 opacity-90 dark:bg-[#232222] bg-white '>
       <div className='container flex mx-auto py-5  dark:bg-[#232222] bg-white  justify-between items-center text-xl'>
-        <div className='flex items-end gap-1'>
-          <img src='/jsnjlogo.jpg' alt='nj logo' width={30} height={30} />
-          <span>Nemanja Jezdić</span>
-        </div>
+        <a href='#'>
+          <div className='flex items-end gap-1'>
+            <img src='/jsnjlogo.jpg' alt='nj logo' width={30} height={30} />
+            <span>Nemanja Jezdić</span>
+          </div>
+        </a>
         <div className='hidden md:flex items-center gap-8'>
-          <a className='hover:underline cursor-pointer' href='#about'>
-            about
-          </a>
-          <a href='#tools' className='hover:underline'>
-            skills and tools
-          </a>
-          <a href='#projects' className='hover:underline'>
-            projects
-          </a>
-          <Link href='/'>
-            <a className='hover:underline'>contact</a>
-          </Link>
+          {menuItems.map((item) => (
+            <a
+              key={item}
+              className={`hover:underline hover:text-black dark:hover:text-white cursor-pointer transition-colors ${
+                currentSection === ""
+                  ? ""
+                  : currentSection === item
+                  ? "underline"
+                  : "text-gray-400"
+              }`}
+              href={`#${item}`}
+            >
+              {item === "skills" ? item + " and tools" : item}
+            </a>
+          ))}
         </div>
         {theme === "dark" ? (
           <MdOutlineLightMode

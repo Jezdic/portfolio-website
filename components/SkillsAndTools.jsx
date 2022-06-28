@@ -1,11 +1,15 @@
+import useSelectSection from "../utils/useSelectSection";
+
 const SkillsAndTools = () => {
+  const ref = useSelectSection("skills");
+
   return (
     <div
       className='flex flex-col items-center md:mt-20 md:w-1/2 lg:w-1/3 scroll-mt-20 md:mx-auto'
-      id='tools'
+      id='skills'
     >
-      <h1 className='text-4xl md:text-5xl underline md:mb-20'>
-        Skill and tools I use
+      <h1 ref={ref} className='text-4xl md:text-5xl underline md:mb-20'>
+        Skills and tools I use
       </h1>
       <div className='flex gap-10 flex-wrap justify-center'>
         <div className='w-20 h-20  flex flex-col items-center'>

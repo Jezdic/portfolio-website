@@ -1,12 +1,18 @@
 import Image from "next/image";
 
+import useSelectSection from "../utils/useSelectSection";
+
 const About = () => {
+  const ref = useSelectSection("about");
+
   return (
     <div
       className='p-10 flex flex-col items-center scroll-mt-10 justify-center gap-6 md:gap-14'
       id='about'
     >
-      <h1 className='text-4xl md:text-5xl underline '>About me</h1>
+      <h1 ref={ref} className='text-4xl md:text-5xl underline '>
+        About me
+      </h1>
       <div className='flex flex-col-reverse md:flex-row gap-4 md:w-2/3 items-center '>
         <div className='md:w-2/3 md:text-xl'>
           <p>
