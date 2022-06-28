@@ -9,7 +9,10 @@ const ProjectPreview = ({ project: { projectName, img, intro, tags } }) => {
         <p>{intro}</p>
         <div className='flex flex-wrap gap-1 mt-2'>
           {tags.map((tag) => (
-            <span className='p-1 border bg-white rounded-md dark:bg-transparent'>
+            <span
+              key={tag}
+              className='p-1 border bg-white rounded-md dark:bg-transparent'
+            >
               {tag}
             </span>
           ))}
