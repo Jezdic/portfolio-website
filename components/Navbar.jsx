@@ -10,16 +10,16 @@ const Navbar = () => {
   const [openMenu, setOpenMenu] = useState(false);
 
   return (
-    <nav className='w-full fixed top-0 px-1  '>
-      <div className='container flex mx-auto py-5 opacity-80 dark:bg-[#121212] bg-white  justify-between items-center text-xl'>
+    <nav className='w-full fixed top-0 px-1 opacity-90 dark:bg-[#232222] bg-white '>
+      <div className='container flex mx-auto py-5  dark:bg-[#232222] bg-white  justify-between items-center text-xl'>
         <div className='flex items-end gap-1'>
           <img src='/jsnjlogo.jpg' alt='nj logo' width={30} height={30} />
-          <span className=''>Nemanja Jezdić</span>
+          <span>Nemanja Jezdić</span>
         </div>
         <div className='hidden md:flex items-center gap-8'>
-          <Link href='/about'>
-            <a className='hover:underline'>about</a>
-          </Link>
+          <a className='hover:underline cursor-pointer' href='#about'>
+            about
+          </a>
           <Link href='/'>
             <a className='hover:underline'>skills and tools</a>
           </Link>
@@ -50,7 +50,7 @@ const Navbar = () => {
         />
       </div>
       {openMenu && (
-        <div className='fixed top-0 left-0 opacity-100 w-screen h-screen bg-white dark:bg-[#121212] flex flex-col text-3xl  items-center justify-center gap-10'>
+        <div className='fixed top-0 left-0 opacity-100 w-screen h-screen bg-white dark:bg-[#232222] flex flex-col text-3xl  items-center justify-center gap-10'>
           <AiOutlineClose
             onClick={() => setOpenMenu(false)}
             size={40}

@@ -1,4 +1,5 @@
 import Head from "next/head";
+import About from "../components/About";
 import Header from "../components/Header";
 
 export default function Home() {
@@ -7,9 +8,21 @@ export default function Home() {
       <Head>
         <title>Nemanja Jezdić</title>
         <meta name='description' content='Front page of my portfolio' />
-        <link rel='icon' href='/favicon.ico' />
+        <link
+          rel='icon'
+          type='image/png'
+          sizes='32x32'
+          href='/image/favicon-32x32.png'
+        />
+        <link
+          rel='icon'
+          type='image/png'
+          sizes='16x16'
+          href='/image/favicon-16x16.png'
+        ></link>
       </Head>
       <Header />
+      <About />
     </div>
   );
 }
