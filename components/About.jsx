@@ -10,8 +10,8 @@ const About = () => {
       <div className='flex flex-col-reverse md:flex-row gap-4 md:w-2/3 items-center '>
         <div className='md:w-2/3 md:text-xl'>
           <p>
-            I'm a 23 years old English tutor based in Belgrade, Serbia.
-            Throughout my teaching career I've met and worked with many
+            I&apos;m a 23 years old English tutor based in Belgrade, Serbia.
+            Throughout my teaching career I&apos;ve met and worked with many
             programmers and IT specialists from all around the world which
             sparked my curiosity and eventually inspired me to learn web
             development.

@@ -7,7 +7,7 @@ const Header = () => {
         <span className='text-5xl md:text-[12rem] animate-wave origin-[70%_70%]'>
           👋
         </span>
-        <p className='text-3xl md:text-7xl'>Hi, I'm Nemanja Jezdić</p>
+        <p className='text-3xl md:text-7xl'>Hi, I&apos;m Nemanja Jezdić</p>
       </div>
       <div className='flex items-center'>
         <img
