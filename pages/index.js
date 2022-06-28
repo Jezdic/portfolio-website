@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>Nemanja Jezdic</title>
+        <title>Nemanja Jezdić</title>
         <meta name='description' content='Front page of my portfolio' />
         <link rel='icon' href='/favicon.ico' />
       </Head>

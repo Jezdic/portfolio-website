@@ -12,8 +12,11 @@ const Navbar = () => {
   return (
     <nav className='w-full fixed top-0 px-1  '>
       <div className='container flex mx-auto py-5 opacity-80 dark:bg-[#121212] bg-white  justify-between items-center text-xl'>
-        <span>Nemanja Jezdic</span>
-        <div className='hidden md:flex items-center gap-6'>
+        <div className='flex items-end gap-1'>
+          <img src='/jsnjlogo.jpg' alt='nj logo' width={30} height={30} />
+          <span className=''>Nemanja Jezdić</span>
+        </div>
+        <div className='hidden md:flex items-center gap-8'>
           <Link href='/about'>
             <a className='hover:underline'>about</a>
           </Link>
