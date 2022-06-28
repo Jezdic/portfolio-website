@@ -1,6 +1,7 @@
 import Head from "next/head";
 import About from "../components/About";
 import Header from "../components/Header";
+import Projects from "../components/Projects";
 import SkillsAndTools from "../components/SkillsAndTools";
 
 export default function Home() {
@@ -25,6 +26,7 @@ export default function Home() {
       <Header />
       <About />
       <SkillsAndTools />
+      <Projects />
     </div>
   );
 }

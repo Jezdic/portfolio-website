@@ -1,7 +1,7 @@
 const SkillsAndTools = () => {
   return (
     <div
-      className='flex flex-col items-center md:mt-20 md:w-1/2 lg:w-1/3 mb-[200rem] scroll-mt-20 md:mx-auto'
+      className='flex flex-col items-center md:mt-20 md:w-1/2 lg:w-1/3 scroll-mt-20 md:mx-auto'
       id='tools'
     >
       <h1 className='text-4xl md:text-5xl underline md:mb-20'>

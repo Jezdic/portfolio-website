@@ -23,9 +23,9 @@ const Navbar = () => {
           <a href='#tools' className='hover:underline'>
             skills and tools
           </a>
-          <Link href='/'>
-            <a className='hover:underline'>projects</a>
-          </Link>
+          <a href='#projects' className='hover:underline'>
+            projects
+          </a>
           <Link href='/'>
             <a className='hover:underline'>contact</a>
           </Link>
