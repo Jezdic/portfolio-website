@@ -1,20 +1,25 @@
 import Image from "next/image";
 
 import useSelectSection from "../utils/useSelectSection";
+import useSectionTitle from "../utils/useSectionTitle";
 
 const About = () => {
   const ref = useSelectSection("about");
+  const isCurrentSection = useSectionTitle("about");
 
   return (
     <div
-      className='p-10 flex flex-col items-center scroll-mt-10 justify-center gap-6 md:gap-14'
+      className='p-10 flex flex-col 2xl:mb-20 items-center scroll-mt-10 justify-center gap-6 md:gap-14'
       id='about'
     >
-      <h1 ref={ref} className='text-4xl md:text-5xl underline '>
+      <h1
+        ref={ref}
+        className={`text-4xl md:text-5xl  ${isCurrentSection && "underline"}`}
+      >
         About me
       </h1>
       <div className='flex flex-col-reverse md:flex-row gap-4 md:w-2/3 items-center '>
-        <div className='md:w-2/3 md:text-xl'>
+        <div data-aos='fade-left' className='md:w-2/3 md:text-xl 2xl:text-2xl'>
           <p>
             I&apos;m a 23 years old English tutor based in Belgrade, Serbia.
             Throughout my teaching career I&apos;ve met and worked with many

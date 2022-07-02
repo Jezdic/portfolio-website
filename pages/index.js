@@ -1,10 +1,9 @@
-import { useState } from "react";
-
 import Head from "next/head";
 import About from "../components/About";
 import Header from "../components/Header";
 import Projects from "../components/Projects";
 import SkillsAndTools from "../components/SkillsAndTools";
+import Contact from "../components/Contact";
 
 export default function Home() {
   return (
@@ -29,6 +28,7 @@ export default function Home() {
       <About />
       <SkillsAndTools />
       <Projects />
+      <Contact />
     </div>
   );
 }

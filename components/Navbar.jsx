@@ -14,12 +14,16 @@ const Navbar = () => {
   const { currentSection } = useContext(SectionContext);
 
   return (
-    <nav className='w-full fixed top-0 px-1 opacity-90 dark:bg-[#232222] bg-white '>
-      <div className='container flex mx-auto py-5  dark:bg-[#232222] bg-white  justify-between items-center text-xl'>
+    <nav className='w-full fixed top-0 px-1 opacity-90 z-[99] dark:bg-[#232222] bg-white '>
+      <div
+        data-aos='fade-down'
+        data-aos-duration='800'
+        className='container flex mx-auto py-5  dark:bg-[#232222] bg-white  justify-between items-center text-xl 2xl:text-2xl'
+      >
         <a href='#'>
           <div className='flex items-end gap-1'>
             <img src='/jsnjlogo.jpg' alt='nj logo' width={30} height={30} />
-            <span>Nemanja Jezdić</span>
+            <span className='text-xl'>Nemanja Jezdić</span>
           </div>
         </a>
         <div className='hidden md:flex items-center gap-8'>
@@ -29,9 +33,7 @@ const Navbar = () => {
               className={`hover:underline hover:text-black dark:hover:text-white cursor-pointer transition-colors ${
                 currentSection === ""
                   ? ""
-                  : currentSection === item
-                  ? "underline"
-                  : "text-gray-400"
+                  : currentSection !== item && "text-gray-300"
               }`}
               href={`#${item}`}
             >
