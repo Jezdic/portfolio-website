@@ -11,7 +11,6 @@ const Header = () => {
     <div className='h-[70vh] md:h-screen 2xl:h-[95vh] flex flex-col gap-10 md:gap-8 items-center justify-center'>
       <div className='flex items-center -mt-20'>
         <span
-          data-aos='fade-left'
           className={`text-5xl md:text-[12rem] z-10 2xl:text-[16rem] ${
             isCurrentSection && "animate-wave"
           } origin-[70%_70%]`}
