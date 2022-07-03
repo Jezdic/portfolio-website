@@ -3,7 +3,14 @@ export const projectData = [
     projectName: "Workouter",
     img: "/me.png",
     intro: "Workout logging social media app",
-    tags: ["react", "express", "cloudinary", "vite", "sass modules"],
+    tags: [
+      "react",
+      "express",
+      "cloudinary",
+      "vite",
+      "sass modules",
+      "realtime notifications",
+    ],
   },
   {
     projectName: "Shopper",

@@ -1,7 +1,7 @@
 import useSelectSection from "../utils/useSelectSection";
 import useSectionTitle from "../utils/useSectionTitle";
 
-import { projectData } from "../projectData";
+import { projectData } from "../utils/projectData";
 import ProjectPreview from "./ProjectPreview";
 
 const Projects = () => {

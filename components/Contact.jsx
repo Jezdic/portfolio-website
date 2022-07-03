@@ -19,7 +19,9 @@ const Contact = () => {
         Contact
       </h1>
       <div className='flex flex-col gap-10 w-screen md:w-full text-xl md:text-2xl justify-center'>
-        <p data-aos='fade-up'>Want to get in touch? Use the form below!</p>
+        <p data-aos='fade-up'>
+          Want to get in touch? Feel free to use the form below!
+        </p>
         <div>
           <form className='flex flex-col gap-2'>
             <label htmlFor='fullname'>
