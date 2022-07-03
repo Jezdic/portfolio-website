@@ -14,11 +14,11 @@ const Navbar = () => {
   const { currentSection } = useContext(SectionContext);
 
   return (
-    <nav className='w-full fixed top-0 px-1 opacity-90 z-[99] dark:bg-[#232222] bg-white '>
+    <nav className='w-full fixed top-0 px-1 opacity-90 z-[99] dark:bg-[#232222] bg-white'>
       <div
         data-aos='fade-down'
         data-aos-duration='800'
-        className='container flex mx-auto py-5  dark:bg-[#232222] bg-white  justify-between items-center text-xl 2xl:text-2xl'
+        className='container opacity-90 flex mx-auto py-5 dark:bg-[#232222] bg-white  justify-between items-center text-xl 2xl:text-2xl'
       >
         <a href='#'>
           <div className='flex items-end gap-1'>
