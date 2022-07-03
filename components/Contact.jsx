@@ -23,7 +23,7 @@ const Contact = () => {
         <div>
           <form className='flex flex-col gap-2'>
             <label htmlFor='fullname'>
-              Name <span class='text-red-500'>*</span>
+              Name <span className='text-red-500'>*</span>
             </label>
             <input
               id='fullname'
@@ -32,7 +32,7 @@ const Contact = () => {
               type='text'
             />
             <label htmlFor='email'>
-              Email <span class='text-red-500'>*</span>
+              Email <span className='text-red-500'>*</span>
             </label>
             <input
               id='email'
@@ -41,7 +41,7 @@ const Contact = () => {
               type='text'
             />
             <label htmlFor='message'>
-              Message <span class='text-red-500'>*</span>
+              Message <span className='text-red-500'>*</span>
             </label>
             <textarea
               id='message'
