@@ -18,7 +18,7 @@ const Navbar = () => {
       <div
         data-aos='fade-down'
         data-aos-duration='800'
-        className='container opacity-90 flex mx-auto py-5 dark:bg-[#232222] bg-white  justify-between items-center text-xl 2xl:text-2xl'
+        className='container flex mx-auto py-5 dark:bg-transparent bg-white  justify-between items-center text-xl 2xl:text-2xl'
       >
         <a href='#'>
           <div className='flex items-end gap-1'>

@@ -22,9 +22,28 @@ module.exports = {
           "90%": { transform: "rotate(-4.0deg)" },
           "100%": { transform: "rotate(0deg)" },
         },
+        shakeError: {
+          "0%, 10%, 20%, 30%, 40%, 50%, 60%": { transform: "translateX(2px)" },
+          "5%, 15%, 25%, 35%, 45%, 55%, 65%": {
+            transform: "translateX(-2px)",
+          },
+        },
+        opacity: {
+          "0%": { opacity: "0" },
+          "100%": { opacity: "1" },
+        },
+        fadeScale: {
+          "0%": { transform: "scale(0.25)" },
+          "25%": { transform: "scale(0.5)" },
+          "50%": { transform: "scale(0.75)" },
+          "100%": { transform: "scale(1)" },
+        },
       },
       animation: {
         wave: "wave 2.5s ",
+        shakeError: "shakeError 1s",
+        opacity: "opacity .2s",
+        fadeScale: "fadeScale .3s",
       },
     },
   },

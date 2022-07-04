@@ -29,6 +29,7 @@ export default function Home() {
       <SkillsAndTools />
       <Projects />
       <Contact />
+      <div id='modal-root'></div>
     </div>
   );
 }

@@ -22,7 +22,7 @@ function MyApp({ Component, pageProps }) {
 
   return (
     <SectionContext.Provider value={{ currentSection, setCurrentSection }}>
-      <ThemeProvider attribute='class'>
+      <ThemeProvider attribute='class' defaultTheme='light'>
         <Layout>
           <Component {...pageProps} />
         </Layout>
