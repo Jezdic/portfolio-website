@@ -231,7 +231,7 @@ const Contact = () => {
             </button>
           </form>
         </div>
-        <p className='text-base' onClick={() => setShowModal(true)}>
+        <p className='text-base'>
           Alternatively, you can send me an email at{" "}
           <span
             onClick={handleCopyEmail}
