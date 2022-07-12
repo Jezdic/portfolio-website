@@ -28,6 +28,7 @@ const Project = ({
             <a
               href={github}
               target='_blank'
+              rel='noreferrer'
               className='px-4 py-2 border rounded-lg mr-4 text-white bg-purple-500 hover:bg-purple-600 cursor-pointer'
             >
               Github Repo
@@ -36,6 +37,7 @@ const Project = ({
           <a
             href={live}
             target='_blank'
+            rel='noreferrer'
             className='px-4 py-2 border rounded-lg text-white bg-blue-500 hover:bg-blue-600 cursor-pointer'
           >
             Live Demo
