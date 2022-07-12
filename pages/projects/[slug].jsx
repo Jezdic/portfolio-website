@@ -42,6 +42,11 @@ const Project = ({
           >
             Live Demo
           </a>
+          <div className='text-sm mt-2'>
+            note: the server is hosted on heroku, so the website may be slower
+            and some features may not work as intended. Thank you for
+            uderstanding.
+          </div>
         </div>
         <div className='flex flex-col'>
           <img src={`/${gif}`} className='h-[40rem]' />
