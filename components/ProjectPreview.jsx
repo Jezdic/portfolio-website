@@ -8,7 +8,12 @@ const ProjectPreview = ({
     <Link href={`/projects/${slug}`}>
       <div data-aos='fade-up' data-aos-offset='200'>
         <div className='p-4 flex flex-col border w-[20rem]  bg-gray-200 cursor-pointer transition hover:scale-105 dark:bg-transparent rounded-xl shadow-md hover:shadow-xl'>
-          <Image height={300} width={200} alt={projectName} src={img} />
+          <img
+            loading='lazy'
+            className='w-[300px] h-[300px]'
+            alt={projectName}
+            src={img}
+          />
           <div className='flex flex-col justify-between '>
             <h1 className='text-2xl'>{projectName}</h1>
             <p>{intro}</p>
