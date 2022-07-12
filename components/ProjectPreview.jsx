@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Image from "next/image";
 
 const ProjectPreview = ({
   project: { projectName, img, intro, tags, slug },

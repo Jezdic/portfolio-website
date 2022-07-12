@@ -1,7 +1,7 @@
 export const projectData = [
   {
     projectName: "Workouter",
-    img: "/workouter.jpg",
+    img: "/workouter.JPG",
     intro: "Workout logging social media app",
     slug: "workouter",
     tags: [
@@ -15,21 +15,21 @@ export const projectData = [
   },
   {
     projectName: "Shopper",
-    img: "/shop.jpg",
+    img: "/shop.JPG",
     intro: "Fullstack e-commerce application",
     slug: "shopper",
     tags: ["react", "redux", "stripe", "tailwindCSS", "axios"],
   },
   {
     projectName: "Naruto Arena Clone",
-    img: "/arena.jpg",
+    img: "/arena.JPG",
     intro: "Mutliplayer strategy game",
     slug: "naruto-arena-clone",
     tags: ["socket.IO", "express", "JavaScript", "nodeJS"],
   },
   {
     projectName: "Iks-Oks-Toe",
-    img: "/iksokstoe.jpg",
+    img: "/iksokstoe.JPG",
     intro: "Multiplayer tic-tac-toe game with an in-game chat",
     slug: "iks-oks-toe",
     tags: ["HTML", "CSS", "JavaScript", "socket.IO"],
