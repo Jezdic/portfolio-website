@@ -12,7 +12,7 @@ const ProjectPreview = ({
           <div className='flex flex-col justify-between '>
             <h1 className='text-2xl'>{projectName}</h1>
             <p>{intro}</p>
-            <div className='flex flex-wrap gap-1 mt-2'>
+            <div className='flex flex-wrap gap-1 mt-2 '>
               {tags.map((tag) => (
                 <span
                   key={tag}

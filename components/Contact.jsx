@@ -56,7 +56,7 @@ const Contact = () => {
 
     setTimeout(() => {
       setShowCopySuccess(false);
-    }, 1500);
+    }, 1000);
   };
 
   const validateFormFields = () => {
@@ -131,7 +131,7 @@ const Contact = () => {
   return (
     <div
       id='contact'
-      className='scroll-mt-20 mb-[199rem] flex flex-col items-center mt-20 md:w-1/2 mx-auto '
+      className='scroll-mt-20 flex flex-col mb-10 items-center mt-20 md:w-1/2 mx-auto '
     >
       <h1
         ref={ref}

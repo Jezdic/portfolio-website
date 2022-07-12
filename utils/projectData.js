@@ -1,7 +1,7 @@
 export const projectData = [
   {
     projectName: "Workouter",
-    img: "/me.png",
+    img: "/workouter.jpg",
     intro: "Workout logging social media app",
     slug: "workouter",
     tags: [
@@ -15,38 +15,126 @@ export const projectData = [
   },
   {
     projectName: "Shopper",
-    img: "/me.png",
-    intro: "Workout logging social media app",
+    img: "/shop.jpg",
+    intro: "Fullstack e-commerce application",
     slug: "shopper",
-    tags: ["react", "express", "cloudinary", "vite", "sass modules"],
+    tags: ["react", "redux", "stripe", "tailwindCSS", "axios"],
   },
   {
     projectName: "Naruto Arena Clone",
-    img: "/me.png",
-    intro: "Workout logging social media app",
+    img: "/arena.jpg",
+    intro: "Mutliplayer strategy game",
     slug: "naruto-arena-clone",
-    tags: ["react", "express", "cloudinary", "vite", "sass modules"],
+    tags: ["socket.IO", "express", "JavaScript", "nodeJS"],
   },
   {
     projectName: "Iks-Oks-Toe",
-    img: "/me.png",
-    intro: "Workout logging social media app",
+    img: "/iksokstoe.jpg",
+    intro: "Multiplayer tic-tac-toe game with an in-game chat",
     slug: "iks-oks-toe",
-    tags: ["react", "express", "cloudinary", "vite", "sass modules"],
+    tags: ["HTML", "CSS", "JavaScript", "socket.IO"],
   },
 ];
 
 export const projectDetails = {
   workouter: {
+    name: "Workouter",
     intro: "Workout logging social media application",
+    description:
+      "Social media app for sharing workout routines and pictures, in which the user can follow people, like, comment, and reply on their workouts.",
+
+    tools: [
+      "mongoDB",
+      "express",
+      "react",
+      "nodeJS",
+      "sass",
+      "socket.io",
+      "jwt auth",
+      "cloudinary",
+      "vite",
+      "react-router-dom",
+    ],
+    details: [
+      "Utilized Cloudinary API to upload workout images to their CDN, which greatly boosted image load times.",
+      "Created an instant notification system using Socket.IO, notifications are persisted in the database and sent to the user immediately through the socket connection if they are online.",
+      "Implemented a paginated, infinite scroll feed of workouts.",
+      "Users are authenticated and authorized using JsonWebTokens.",
+      "Paginated comments and notifications, with a preview of the notification available to the user so that they can reply to or like comments directly in the notification component.",
+    ],
+    gif: "workouter.gif",
+    github: "https://github.com/Jezdic/workouter__",
+    live: "https://workouter-frontend.netlify.app",
   },
   shopper: {
-    intro: "E-commerce app",
+    name: "Shopper",
+    intro: "Fullstack e-commerce application",
+    description:
+      "E-commerce clothing shop app, with functional stripe payment system and an admin dasboard for editing and adding new products.",
+    tools: [
+      "react",
+      "redux",
+      "stripe",
+      "tailwindCSS",
+      "nodeJS",
+      "express",
+      "mongoDB",
+      "axios",
+    ],
+    details: [
+      "Implemented a shopping cart which saves items in local storage.",
+      "Used Redux for global state, and for fetching data from the API using Axios.",
+      "Implemented the Stripe API for credit card payments.",
+      "Products are paginated, added filters such as price range, brand, product type.",
+      "Added a preview of the shopping cart on hover.",
+      "This project will likely be ported to Next.JS in the future.",
+    ],
+    gif: "shopper.gif",
+    github: "https://github.com/Jezdic/Shopper",
+    live: "https://shopper-front.netlify.app",
   },
   "naruto-arena-clone": {
+    name: "Naruto Arena Clone",
     intro: "Mutliplayer strategy game",
+    description:
+      "Remake of an old multiplayer strategy game called Naruto Arena using vanilla JS on the frontend and an express socket.io server.",
+    tools: [
+      "JavaScript",
+      "HTML",
+      "CSS",
+      "Bootstrap",
+      "socket.IO",
+      "nodeJS",
+      "express",
+    ],
+    details: [
+      "Before the game, players need to choose 3 playable characters based on their preferences and character abilities",
+      "The game is turn-based, and each player receives chakra at the beggining of their turn",
+      "Skills have a certain chakra requirement which the player must use before ending the turn",
+      "Each characted has 3 skills and an invulnerability skill, which makes them immune the next turn",
+      "The player who successfully defeats all of the opponents characters wins the game",
+      "The server currently supports 2 concurrent players",
+    ],
+    gif: "arena.gif",
+    live: "https://arena-rm.herokuapp.com",
   },
+
   "iks-oks-toe": {
-    intro: "Multiplayer tic-tac-toe game",
+    name: "Iks-Oks-Toe",
+    intro: "Multiplayer tic-tac-toe game with an in-game chat",
+    description:
+      "A simple online tic-tac-toe game which I built with a student to teach them the basics of JavaScript and introduce them to web development.",
+    tools: ["JavaScript", "HTML", "CSS", "socket.IO", "express"],
+    details: [
+      "The user enters the lobby by typing their username",
+      "In the lobby, online players are displayed which the user can challenge to a game",
+      "Players who are currently in-game cannot be challenged by other players.",
+      "Once the game has started, the two players can exchange messages using the chatbox",
+      "After the game is finished, scores are updated and players can choose to continue playing",
+      "The server supports multiple concurrent players and games",
+    ],
+    gif: "iksokstoe.gif",
+    github: "https://github.com/Jezdic/iksokstoe",
+    live: "http://iks-oks-toe.herokuapp.com",
   },
 };
